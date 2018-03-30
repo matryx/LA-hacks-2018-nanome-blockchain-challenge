@@ -54,7 +54,6 @@ truffle develop
 migrate
 ```
 
-
 ```
 web3.eth.defaultAccount = web3.personal.listAccounts[0]
 ```
@@ -71,19 +70,23 @@ ie:
 
 ```assetFactory.``` and hit tab tab results in:
 
-
-marketPlace.__defineGetter__      marketPlace.__defineSetter__      marketPlace.__lookupGetter__      marketPlace.__lookupSetter__      marketPlace.__proto__             marketPlace.constructor
-marketPlace.hasOwnProperty        marketPlace.isPrototypeOf         marketPlace.propertyIsEnumerable  marketPlace.toLocaleString        marketPlace.toString              marketPlace.valueOf
-
-marketPlace.AssetCreated          marketPlace.AssetLeased           marketPlace.AssetSold             marketPlace._eth                  marketPlace.abi                   marketPlace.address
-marketPlace.allEvents             marketPlace.assetFactoryAddress   marketPlace.createDigitalAsset    marketPlace.digitalAssets         marketPlace.getOwner              marketPlace.isOwner
-marketPlace.owner                 marketPlace.transactionHash       marketPlace.transferOwnership     
-
+| marketPlace.__defineGetter__ | marketPlace.__defineSetter__     | marketPlace.__lookupGetter__    | marketPlace.__lookupSetter__   |
+|------------------------------|----------------------------------|---------------------------------|--------------------------------|
+| marketPlace.__proto__        | marketPlace.constructor          |                                 |                                |
+|                              |                                  |                                 |                                |
+| marketPlace.hasOwnProperty   | marketPlace.propertyIsEnumerable | marketPlace.isPrototypeOf       | marketPlace.toLocaleString     |
+| marketPlace.toString         | marketPlace.valueOf              |                                 |                                |
+|                              |                                  |                                 |                                |
+| marketPlace.AssetCreated     | marketPlace.AssetLeased          | marketPlace.AssetSold           | marketPlace._eth               |
+| marketPlace.address          | marketPlace.allEvents            | marketPlace.assetFactoryAddress | marketPlace.createDigitalAsset |
+| marketPlace.digitalAssets    | marketPlace.getOwner             | marketPlace.isOwner             | marketPlace.owner              |
+| marketPlace.transactionHash  | marketPlace.transferOwnership    |                                 |                                |
+|                              |                                  |                                 |                                |
 
 To Create a Digital Asset:
 
 ```
-marketPlace.createDigitalAsset("Digital Asset Name","Description","Serial Number")
+marketPlace.createDigitalAsset("Digital Asset Name","Description","Serial Number", {from: web3.eth.accounts[0], gas: 3000000})
 ```
 
 
