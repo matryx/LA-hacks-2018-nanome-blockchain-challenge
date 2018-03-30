@@ -71,7 +71,7 @@ ie:
 ```assetFactory.``` and hit tab tab results in:
 
 | marketPlace.__defineGetter__ | marketPlace.__defineSetter__     | marketPlace.__lookupGetter__    | marketPlace.__lookupSetter__   |
-|------------------------------|----------------------------------|---------------------------------|--------------------------------|
+|						       |						          |       							|     							 |
 | marketPlace.__proto__        | marketPlace.constructor          |                                 |                                |
 |                              |                                  |                                 |                                |
 | marketPlace.hasOwnProperty   | marketPlace.propertyIsEnumerable | marketPlace.isPrototypeOf       | marketPlace.toLocaleString     |
@@ -86,9 +86,25 @@ ie:
 To Create a Digital Asset:
 
 ```
-marketPlace.createDigitalAsset("Digital Asset Name","Description","Serial Number", {from: web3.eth.accounts[0], gas: 3000000})
+assetFactory.createAsset("Digital Asset Name","Description","Serial Number", {gas: 3000000})
+```
+
+This should respond with a transaction hash showing that the assetFactory is created
+
+MAX TODO
+
+Now you can attach to the Digital Asset Instance you created
+
+```
+digitalAsset = web3.eth.contract(DigitalAsset.abi).at(<YourDigitalAssetAddress>)
 ```
 
 
+Now that you are attached, you can call the setters or get the data from it!
 
+```
+digitalAsset.owner()
 
+```
+
+If you have any questions, hit us on the slack channel for LA hacks under 'nanome-challenge'
