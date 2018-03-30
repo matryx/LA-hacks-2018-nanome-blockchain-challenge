@@ -21,8 +21,7 @@ Additional points for creative, artistic, scientific, or hilarious entries
 Winning team will receive 1,000 MATRYX Tokens, media posts by Matryx and Nanome recognizing your achievement, and mentions to our 15,000+ telegram community members.
 
 ## Key technologies and hints:
-Ethereum Solidity
-
+* Ethereum Solidity
 * Web3
 * My Ether Wallet (ERC20 Token Wallet)
 * Metamask
