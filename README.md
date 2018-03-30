@@ -21,13 +21,13 @@ Additional points for creative, artistic, scientific, or hilarious entries
 Winning team will receive 1,000 MATRYX Tokens, media posts by Matryx and Nanome recognizing your achievement, and mentions to our 15,000+ telegram community members.
 
 ## Key technologies and hints:*
-Ethereum Solidity
-Web3
-My Ether Wallet (ERC20 Token Wallet)
-Metamask
-Truffle
-Ganache-cli / TestRPC
-Lots of Javascript
+*Ethereum Solidity
+*Web3
+*My Ether Wallet (ERC20 Token Wallet)
+*Metamask
+*Truffle
+*Ganache-cli / TestRPC
+*Lots of Javascript
 
 ## There should be 3 main portions to your app.*
 Frontend: An interface such as a WebUI that has a shopping cart like functionality where the items in the shop are the smart contracts of digital assets
@@ -44,7 +44,7 @@ http://www.nanome.ai/
 
 ## Project Usage
 
-* If using truffle then use the following:
+If using truffle then use the following:
 
 ```
 truffle develop
@@ -71,7 +71,6 @@ ie:
 ```assetFactory.``` and hit tab tab results in:
 
 | marketPlace.__defineGetter__ | marketPlace.__defineSetter__     | marketPlace.__lookupGetter__    | marketPlace.__lookupSetter__   |
-|						       |						          |       							|     							 |
 | marketPlace.__proto__        | marketPlace.constructor          |                                 |                                |
 |                              |                                  |                                 |                                |
 | marketPlace.hasOwnProperty   | marketPlace.propertyIsEnumerable | marketPlace.isPrototypeOf       | marketPlace.toLocaleString     |
@@ -104,7 +103,6 @@ Now that you are attached, you can call the setters or get the data from it!
 
 ```
 digitalAsset.owner()
-
 ```
 
 If you have any questions, hit us on the slack channel for LA hacks under 'nanome-challenge'
