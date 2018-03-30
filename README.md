@@ -86,25 +86,32 @@ ie:
 To Create a Digital Asset:
 
 ```
-assetFactory.createAsset("Digital Asset Name","Description","Serial Number", {gas: 3000000})
+truffle(develop)> assetFactory.createAsset("Digital Asset Name","Description","Serial Number", {gas: 3000000})
 ```
 
-This should respond with a transaction hash showing that the assetFactory is created
-
-MAX TODO
-
-Now you can attach to the Digital Asset Instance you created
+This should respond with a transaction hash showing that the assetFactory created a digital asset. In your Marketplace contract (and any other contracts that calls assetFactory.createAsset),
+you will be returned the address of the newly-created Digital Asset. You can preview this functionality by making the following call from your truffle develop console:
 
 ```
-digitalAsset = web3.eth.contract(DigitalAsset.abi).at(<YourDigitalAssetAddress>)
+truffle(develop)> assetFactory.createAsset.call("Digital Asset Name","Description","Serial Number", {gas: 3000000})
+'0xaa8f61728cb614f37a2fdb8b420c3c33134c7f69'
+```
+
+While this address does not actually contain any DigitalAsset code, once you have a datastructure in place in your Marketplace contract, you will be able to attach to a Digital Asset with the following command:
+
+```
+truffle(develop)> digitalAsset = web3.eth.contract(DigitalAsset.abi).at(<YourDigitalAssetAddress>)
 ```
 
 
 Now that you are attached, you can call the setters or get the data from it!
 
 ```
-digitalAsset.owner()
-
+truffle(develop)> digitalAsset.owner()
+'0x627306090abab3a6e1400e9345bc60c78a8bef57'
 ```
 
-If you have any questions, hit us on the slack channel for LA hacks under 'nanome-challenge'
+Remember: events are your friend in the land of Web UI! Do remember to balance your work on the smart contracts with a workable UI. Bonus points will be awarded if you use autoencoders to do similarity detection between assets somewhere in your project :)
+
+Good luck!
+If you have any questions, hit us up on the slack channel for LA hacks under 'nanome-challenge'
