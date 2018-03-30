@@ -8,5 +8,5 @@ pragma solidity ^0.4.19;
  */
 interface IAssetFactory {
 
-	function createAsset(string _name, string _description, string _identifier) public returns (address assetAddress);
+	function createAsset(string _name, string _description, string _identifier) public returns (address _assetAddress);
 }

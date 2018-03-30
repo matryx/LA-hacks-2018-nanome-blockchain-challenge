@@ -1,13 +1,14 @@
 pragma solidity ^0.4.19;
 
 import './Ownable.sol';
+import '../interfaces/IDigitalAsset.sol';
 
 /**
  * @title DigitalAsset
  * @dev This contract represents a digital asset of some kind (a movie, a song, a sculpture, book, 
  * piece of software, etc). Feel free to add to or change this however you see fit :)
  */
-contract DigitalAsset is Ownable {
+contract DigitalAsset is Ownable, IDigitalAsset {
   string public name;
   string public description;
   string public identifier;

@@ -13,8 +13,6 @@ contract Marketplace is Ownable
 {
 	address public assetFactoryAddress;
 
-	address[] public digitalAssets;
-
 	// Some events for inspiration. Feel free to add to these or write your own!
 	event AssetCreated(address creator, address assetAddress);
 	event AssetSold(address seller, address buyer, address assetAddress);
@@ -26,12 +24,6 @@ contract Marketplace is Ownable
 	function Marketplace(address _assetFactoryAddress) public
 	{
 		assetFactoryAddress = _assetFactoryAddress;
-	}
-
-	function createDigitalAsset(string _name, string _description, string _identifier) public
-	{
-		address newAsset = IAssetFactory(assetFactoryAddress).createAsset(_name, _description, _identifier);
-		digitalAssets.push(newAsset);
 	}
 
 	/***                 YOUR WORK HERE!                ***/

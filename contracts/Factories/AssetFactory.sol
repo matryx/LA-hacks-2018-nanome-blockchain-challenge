@@ -1,6 +1,7 @@
 pragma solidity ^0.4.19;
 
 import '../DigitalAsset.sol';
+import '../../interfaces/IAssetFactory.sol';
 
 /**
  * @title AssetFactory
@@ -8,7 +9,7 @@ import '../DigitalAsset.sol';
  * you need many contracts that do the same thing. This contract will allow you to create as many
  * digital assets as you need.
  */
-contract AssetFactory is Ownable {
+contract AssetFactory is Ownable, IAssetFactory {
 
   /** 
    *  @dev Creates a new digital asset smart contract
@@ -17,9 +18,10 @@ contract AssetFactory is Ownable {
    *  @param _identifier Identifier for the asset.
    *  @return Address of digital asset smart contract.
    */
-  function createAsset(string _name, string _description, string _identifier) public onlyOwner returns (address assetAddress)
+  function createAsset(string _name, string _description, string _identifier) public returns (address assetAddress)
   {
-    address newDigitalAsset = new DigitalAsset(_name, _description, _identifier);
+    DigitalAsset newDigitalAsset = new DigitalAsset(_name, _description, _identifier);
     return newDigitalAsset;
   }
+
 }
