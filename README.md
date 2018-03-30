@@ -68,7 +68,7 @@ To see what functions are available, type the name of the contract instance and 
 
 ie:
 
-```assetFactory.``` and hit tab tab results in:
+```marketplace.``` and hit tab tab results in:
 
 | marketPlace.__defineGetter__ | marketPlace.__defineSetter__     | marketPlace.__lookupGetter__    | marketPlace.__lookupSetter__   |
 |------------------------------|----------------------------------|---------------------------------|--------------------------------|
@@ -114,4 +114,6 @@ truffle(develop)> digitalAsset.owner()
 Remember: events are your friend in the land of Web UI! Do remember to balance your work on the smart contracts with a workable UI. Bonus points will be awarded if you use autoencoders to do similarity detection between assets somewhere in your project :)
 
 Good luck!
-If you have any questions, hit us up on the slack channel for LA hacks under 'nanome-challenge' @NanomeSam + @NanomeMax
+If you have any questions, hit us up on the slack channel for LA hacks under 'nanome-challenge'
+
+@NanomeSam + @NanomeMax
