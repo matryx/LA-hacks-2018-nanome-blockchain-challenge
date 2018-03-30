@@ -20,16 +20,17 @@ Additional points for creative, artistic, scientific, or hilarious entries
 
 Winning team will receive 1,000 MATRYX Tokens, media posts by Matryx and Nanome recognizing your achievement, and mentions to our 15,000+ telegram community members.
 
-## Key technologies and hints:*
-*Ethereum Solidity
-*Web3
-*My Ether Wallet (ERC20 Token Wallet)
-*Metamask
-*Truffle
-*Ganache-cli / TestRPC
-*Lots of Javascript
+## Key technologies and hints:
+Ethereum Solidity
 
-## There should be 3 main portions to your app.*
+* Web3
+* My Ether Wallet (ERC20 Token Wallet)
+* Metamask
+* Truffle
+* Ganache-cli / TestRPC
+* Lots of Javascript
+
+## There should be 3 main portions to your app.
 Frontend: An interface such as a WebUI that has a shopping cart like functionality where the items in the shop are the smart contracts of digital assets
 ShoppingController SmartContract: Smart Contract(s) that holds the blockchain logic and tracks addresses of the Digital Assets
 Digital Asset Smart Contracts: These are the items “for sale” which are Digital Assets. Each one has it’s own smart contract and an owner. There should be a lot of these. Feel free to change what code we gave you
