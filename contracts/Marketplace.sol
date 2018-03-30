@@ -7,7 +7,8 @@ import './Ownable.sol';
 /**
  * @title Marketplace
  * @dev This contract represents your digital asset marketplace. Add as many features as you want
- * and feel free to get creative!
+ * and feel free to get creative! 
+ * (Super mega bonus points if you use autoencoders offchain to do similarity detection between digital assets)
  */
 contract Marketplace is Ownable
 {
