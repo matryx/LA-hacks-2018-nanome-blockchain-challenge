@@ -129,7 +129,8 @@ Remember: events are your friend in the land of Web UI! Do remember to balance y
 Good luck!
 If you have any questions, hit us up on the slack channel for LA hacks under 'nanome-challenge'
 
-@NanomeSam + @NanomeMax
+=======
+@NanomeSam + @NanomeMax + @MTXAustin
 
---------------------
+
 
