@@ -1,10 +1,20 @@
 
 
-# Welcome to the LA Hacks 2018 Blockchain Challenge by Nanome Inc.
+# Welcome to the LA Hacks 2018 Blockchain Challenge by Nanome Inc. (This event has ended!)
 
 
 ![logo](https://github.com/matryx/LA-hacks-2018-nanome-blockchain-challenge/blob/master/assets/Nanome_Logo_Color.jpg)
 
+-----
+Winner selected was team: TokenMaster (https://devpost.com/software/tokenmaster)
+Other submissions included: 
+* Crowdchain (https://devpost.com/software/crowdchain-a3kg94)
+* Secords (https://devpost.com/software/marss)
+* GuacPay (https://devpost.com/software/guacpay)
+
+Git cloned repos are included in the ![hacker-submissions](https://github.com/matryx/LA-hacks-2018-nanome-blockchain-challenge/hacker-submissions/) folder!
+
+-----
 In today’s emerging blockchain ecosystem, the concept of “Digital Assets” became immediately available with the expansion of the tokenization movement and smart contract frameworks. Decentralized Applications (DAPPS) are going to be a staple in the next generation internet stack (Web3.0 et. al) and will require decentralized versions of existing architecture for our current internet.
 
 For this Hackathon, Nanome Inc challenges you to build your own Shopping DAPP WebApp on the Ethereum Virtual Network using Solidity. We will give you a basic Smart Contract of a “Digital Asset” to start out, along with some easy deployment instructions. We want you to build a new Smart Contract to handle the purchase of these Digital Assets as well as a Web UI for the shopping experience.
@@ -120,3 +130,6 @@ Good luck!
 If you have any questions, hit us up on the slack channel for LA hacks under 'nanome-challenge'
 
 @NanomeSam + @NanomeMax
+
+--------------------
+
